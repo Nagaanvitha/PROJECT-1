@@ -1,0 +1,119 @@
+# GENERAL AI & ML CONCEPTS :
+
+1] AI is the broad concept of smart machines, ML is teaching machines from data, and DL is using deep neural networks to learn from big data.
+
+2] The main types are supervised, unsupervised, semi-supervised, and reinforcement learning.
+
+3] Supervised learning uses labeled data to predict outcomes, while unsupervised learning finds hidden patterns in unlabeled data.
+
+4] Overfitting means the model memorizes training data and doesn’t generalize, while underfitting means the model is too simple to learn patterns.
+
+5] “I first split the data into training and test sets, then use appropriate metrics like accuracy or RMSE depending on the task, and often apply cross-validation for more reliable results.”
+
+6] The bias-variance trade-off is balancing underfitting and overfitting to achieve the best model performance on unseen data.
+
+7] Cross-validation tests the model on multiple data splits, giving a better idea of how it will perform on new, unseen data.
+
+8] Accuracy shows overall correctness, precision tells us how reliable positive predictions are, recall tells us how many actual positives were found, and F1-score balances precision and recall.
+
+9] Classification predicts which category something belongs to, while regression predicts a continuous number.
+
+10] AI/ML helps improve efficiency, reduce costs, and create personalized experiences across industries.
+
+
+# DATA PREPROCESSING & FEATURE ENGINEERING :
+
+1] I handle missing data by either removing or imputing values, depending on the situation, and sometimes use models that handle missingness directly.
+
+2] Normalization rescales data to 0-1 range, while standardization rescales data to have zero mean and unit variance.
+
+3] One-hot encoding converts categorical variables into binary columns so models can process them without implying any order.
+
+4]I convert categorical variables to numeric using label encoding for ordered categories and one-hot encoding for unordered ones.
+
+5] Feature selection helps pick the most relevant inputs, improving model accuracy, speed, and interpretability.
+
+6] Dimensionality reduction simplifies the dataset by removing less important features, and PCA does this by transforming data into components that capture the most variance.
+
+7] The curse of dimensionality means that as feature count increases, data becomes sparse and models perform worse unless we reduce the dimensions.
+
+8] Feature scaling ensures all features contribute equally to the model, especially for algorithms sensitive to distances or gradients.
+
+9] I handle imbalanced datasets using resampling techniques, adjusting class weights, and evaluating the model with metrics like F1-score or AUC instead of just accuracy.
+
+10] EDA helps me understand the dataset’s structure and quality, which is critical for making informed modeling decisions and avoiding hidden issues.
+
+
+# MACHINE LEARNING ALGORITHMS :
+
+1] A Decision Tree splits data based on the most informative features, creating a tree-like structure that helps classify or predict outcomes.
+
+2] Bagging builds models in parallel to reduce variance, while boosting builds them sequentially to reduce bias by focusing on previous errors.
+
+3] K-NN predicts outcomes based on the majority or average of the ‘k’ nearest data points, using distance as a measure of similarity.
+
+4] SVM finds the hyperplane that best separates classes by maximizing the margin between them, using support vectors to define this boundary.
+
+5] Naive Bayes uses Bayes’ Theorem with a strong independence assumption to classify data based on probability.
+
+6] Random Forest builds many independent trees to reduce variance, while XGBoost builds trees sequentially to correct errors and reduce bias, often resulting in higher accuracy.
+
+7] Gradient Descent updates parameters using the full dataset for accurate but slower steps, while Stochastic Gradient Descent updates per sample for faster but noisier steps.
+
+8] Logistic Regression models the probability of a binary outcome using the sigmoid function, making it suitable for classification tasks.
+
+9] Ensemble models combine multiple models to improve accuracy and reduce errors compared to single models.
+
+10] L1 regularization can zero out weights for feature selection, while L2 regularization shrinks weights smoothly to reduce complexity.
+
+
+# DEEP LEARNING & NEURAL NETWORKS :
+
+1] A perceptron is a simple linear classifier that uses weighted inputs and an activation function to make binary decisions.
+
+2] Activation functions like ReLU, Sigmoid, and Tanh introduce non-linearity to neural networks, allowing them to learn complex patterns.
+
+3] Epochs define how many times the model sees the data, batch size controls the number of samples per update, and learning rate determines the step size during weight updates.
+
+4] The vanishing gradient problem occurs when gradients shrink during backpropagation, causing slow or halted learning in early layers of deep networks.
+
+5] CNNs are designed for spatial data like images using convolutional filters, while RNNs handle sequential data by maintaining memory over time.
+
+6] LSTM is a type of RNN with gates that manage long-term memory, making it effective for tasks involving long sequences like language and speech.
+
+7] Convolutional layers use filters to scan input images and extract meaningful features for tasks like image recognition.
+
+8] Transfer learning leverages a pre-trained model on a new task to save training time and improve accuracy, especially with limited data.
+
+9] “Dropout randomly disables neurons during training to prevent overfitting and improve model generalization.
+
+10] To prevent overfitting, I use techniques like data augmentation, dropout, regularization, early stopping, and ensure sufficient training data.
+
+
+# NATURAL LANGUAGE PROCESSING :
+
+1] Tokenization is splitting text into smaller units like words or phrases, making it easier for models to process language.
+
+2] Word embeddings like Word2Vec and GloVe map words to vectors based on their context or co-occurrence, capturing semantic meaning for NLP tasks.
+
+3] Stemming crudely trims words to their root form, while lemmatization uses linguistic knowledge to find the proper base word.
+
+4] TF-IDF scores words by how frequent and unique they are across documents, helping models focus on important terms.
+
+5] Transformers use self-attention to process all words simultaneously, capturing context efficiently and enabling powerful NLP models.
+
+
+# MODEL DEPLOYMENT & MLOps :
+
+1] Use model.save() and load_model() for Keras, or pickle/joblib for saving and loading scikit-learn models.
+
+2] Model drift occurs when model accuracy drops due to changing data, and it’s monitored by tracking performance metrics and data distribution over time.
+
+3] To deploy a model as an API, save the trained model, create an API using Flask or FastAPI to handle prediction requests, and host it on a cloud platform.
+
+4] Common tools include Flask or FastAPI for APIs, Docker for containerization, and Streamlit for quick interactive model apps.
+
+5] CI/CD in MLOps automates testing, validation, and deployment of ML models for faster and reliable production updates.
+
+
+
