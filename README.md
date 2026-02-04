@@ -43,11 +43,11 @@ Download the dataset and place it in a folder named plantvillage/.
 
 2. Train the Model
 Run the training script:
-
 bash
 Copy
 Edit
 python train_plant_disease.py
+
 3. Evaluate Accuracy
 The script splits the dataset into train/test sets and outputs accuracy after training.
 
